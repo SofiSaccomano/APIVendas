@@ -2,8 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using APIVendas.Data;
 using APIVendas.Models;
+using Microsoft.AspNetCore.Authorization;
 
-
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class ProdutoController : ControllerBase

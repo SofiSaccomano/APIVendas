@@ -18,7 +18,7 @@ namespace APIVendas.Data
         public DbSet<PedidosModel> Pedidos { get; set; }
         public DbSet<PedidosProdutosModel> PedidosProdutos { get; set; }
         public DbSet<CategoriasModel> Categorias { get; set; }
-
+        public DbSet<LoginModel> Logins { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

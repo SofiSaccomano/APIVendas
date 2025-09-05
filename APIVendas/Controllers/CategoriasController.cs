@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using APIVendas.Data;
 using APIVendas.Models;
 using APIVendas.Data;
+using Microsoft.AspNetCore.Authorization;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class CategoriasController : ControllerBase
